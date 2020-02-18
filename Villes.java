@@ -27,9 +27,9 @@ public class Villes {
         int moyenne = 0;
         int somme = 0;
 
-        for(int i = 0; i < tab[iLigne].length; i++) {
+        for(int i = 0; i < tab[iLigne].length; i++)
             somme = somme + tab[iLigne][i];
-        }
+
 
         moyenne = somme / nbColonnes;
 
@@ -38,18 +38,33 @@ public class Villes {
 
     public static int moyenneUneCol(int [][] tab, int iCol){
         int moyenne = 0;
+        int somme = 0;
+        int nbLigne = tab.length;
+
+        for(int i = 0; i < tab.length; i++)
+            somme = somme + tab[i][iCol];
+
+        moyenne = somme / nbLigne;
 
         return moyenne;
     }
 
-    public static int maxLigne(){
+    public static int maxLigne(int [][] tab, int iLigne){
         int max = 0;
-        
+
+        for(int i = 0; i < tab[iLigne].length; i++)
+            if(tab[iLigne][i] > max)
+                max = tab[iLigne][i];
+
         return max;
     }
 
-    public static int minLigne(){
+    public static int minLigne(int [][] tab, int iLigne){
         int min = 0;
+
+        for(int i = 0; i < tab[iLigne].length; i++)
+            if(tab[iLigne][i] < min)
+                min = tab[iLigne][i];
 
         return min;
     }
