@@ -8,7 +8,7 @@ public class Villes {
 
         for(int i = 0; i < nbLignes; i++)
             for(int j = 0; j < nbColonnes; j++)
-                System.out.println(tab[i][j] + "");
+                System.out.println(tab[i][j]);
     }
 
     public static int sommeUneLigne(int[][] tab, int iLigne){
@@ -36,4 +36,21 @@ public class Villes {
         return moyenne;
     }
 
+    public static int moyenneUneCol(int [][] tab, int iCol){
+        int moyenne = 0;
+
+        return moyenne;
+    }
+
+    public static int maxLigne(){
+        int max = 0;
+        
+        return max;
+    }
+
+    public static int minLigne(){
+        int min = 0;
+
+        return min;
+    }
 }
